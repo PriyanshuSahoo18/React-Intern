@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "ticketId": "TKT-1001",
+    "subject": "Login page not working",
+    "customer": "Rahul Sharma",
+    "status": "Open",
+    "priority": "High",
+    "date": "2026-11-10"
+  },
+  {
+    "id": 2,
+    "ticketId": "TKT-1002",
+    "subject": "Payment failed during checkout",
+    "customer": "Priya Das",
+    "status": "In Progress",
+    "priority": "High",
+    "date": "2026-11-09"
+  },
+  {
+    "id": 3,
+    "ticketId": "TKT-1003",
+    "subject": "Unable to update profile",
+    "customer": "Amit Kumar",
+    "status": "Resolved",
+    "priority": "Low",
+    "date": "2026-11-08"
+  },
+  {
+    "id": 4,
+    "ticketId": "TKT-1004",
+    "subject": "Product search issue",
+    "customer": "Sneha Patel",
+    "status": "Open",
+    "priority": "Medium",
+    "date": "2026-11-08"
+  },
+  {
+    "id": 5,
+    "ticketId": "TKT-1005",
+    "subject": "Order confirmation missing",
+    "customer": "Vikash Singh",
+    "status": "In Progress",
+    "priority": "High",
+    "date": "2026-11-07"
+  },
+  {
+    "id": 6,
+    "ticketId": "TKT-1006",
+    "subject": "Website loading slowly",
+    "customer": "Anjali Roy",
+    "status": "Resolved",
+    "priority": "Medium",
+    "date": "2026-11-07"
+  },
+  {
+    "id": 7,
+    "ticketId": "TKT-1007",
+    "subject": "Unable to reset password",
+    "customer": "Rohit Das",
+    "status": "Open",
+    "priority": "High",
+    "date": "2026-11-06"
+  },
+  {
+    "id": 8,
+    "ticketId": "TKT-1008",
+    "subject": "Incorrect product price",
+    "customer": "Neha Sharma",
+    "status": "Resolved",
+    "priority": "Low",
+    "date": "2026-11-06"
+  },
+  {
+    "id": 9,
+    "ticketId": "TKT-1009",
+    "subject": "Cart items disappearing",
+    "customer": "Sourav Mohanty",
+    "status": "In Progress",
+    "priority": "Medium",
+    "date": "2026-11-05"
+  },
+  {
+    "id": 10,
+    "ticketId": "TKT-1010",
+    "subject": "Email notification issue",
+    "customer": "Pooja Mishra",
+    "status": "Open",
+    "priority": "Low",
+    "date": "2026-11-05"
+  }
+]

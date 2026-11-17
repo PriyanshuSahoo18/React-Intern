@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "name": "Starters",
+    "dishes": [
+      {
+        "id": 101,
+        "name": "Paneer Tikka",
+        "price": 180,
+        "type": "veg",
+        "available": true
+      },
+      {
+        "id": 102,
+        "name": "Chicken Wings",
+        "price": 250,
+        "type": "non-veg",
+        "available": true
+      },
+      {
+        "id": 103,
+        "name": "Veg Spring Roll",
+        "price": 120,
+        "type": "veg",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Main Course",
+    "dishes": [
+      {
+        "id": 201,
+        "name": "Paneer Butter Masala",
+        "price": 220,
+        "type": "veg",
+        "available": true
+      },
+      {
+        "id": 202,
+        "name": "Chicken Biryani",
+        "price": 280,
+        "type": "non-veg",
+        "available": true
+      },
+      {
+        "id": 203,
+        "name": "Veg Fried Rice",
+        "price": 160,
+        "type": "veg",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Desserts",
+    "dishes": [
+      {
+        "id": 301,
+        "name": "Chocolate Brownie",
+        "price": 100,
+        "type": "veg",
+        "available": true
+      },
+      {
+        "id": 302,
+        "name": "Ice Cream",
+        "price": 80,
+        "type": "veg",
+        "available": true
+      }
+    ]
+  }
+]

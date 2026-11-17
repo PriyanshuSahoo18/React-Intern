@@ -1,0 +1,183 @@
+/* Main App */
+
+.app {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+
+.header {
+  background-color: #f97316;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 15px;
+}
+
+/* Main Container */
+
+.main-container {
+  max-width: 750px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Menu Heading */
+
+.menu-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.menu-heading h2 {
+  font-size: 25px;
+  color: #222;
+}
+
+.menu-heading select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Category */
+
+.category {
+  margin-bottom: 30px;
+}
+
+.category-title {
+  font-size: 21px;
+  color: #333;
+  border-bottom: 2px solid #f97316;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Dish List */
+
+.dish-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* Dish Card */
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.dish-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.food-icon {
+  font-size: 20px;
+}
+
+.dish-info h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.dish-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Availability */
+
+.available {
+  color: #15803d;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 375px) {
+
+  .main-container {
+    padding: 20px 12px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .menu-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu-heading h2 {
+    font-size: 22px;
+  }
+
+  .menu-heading select {
+    width: 100%;
+  }
+
+  .dish-card {
+    padding: 12px;
+  }
+
+  .dish-info {
+    gap: 8px;
+  }
+
+  .dish-info h3 {
+    font-size: 14px;
+  }
+
+  .out-of-stock {
+    font-size: 10px;
+    padding: 6px 7px;
+  }
+}

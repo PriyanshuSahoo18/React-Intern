@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Invoice Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>GST Invoice Calculator</h1>
+
+    <h2>Add Invoice Items</h2>
+
+    <div id="inputContainer">
+
+        <div class="form-row">
+            <input type="text" placeholder="Item Name" class="item-name">
+            <input type="number" placeholder="Qty" class="item-qty" min="0" step="any">
+            <input type="number" placeholder="Rate" class="item-rate" min="0" step="any">
+            <input type="number" placeholder="GST %" class="item-gst" min="0" max="100" step="any">
+            <button class="remove-btn" onclick="removeRow(this)">X</button>
+        </div>
+
+    </div>
+
+    <button class="add-btn no-print" onclick="addRow()">
+        + Add Item
+    </button>
+
+    <button class="no-print" onclick="calculateInvoice()">
+        Calculate Invoice
+    </button>
+
+    <h2>Invoice Details</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Rate</th>
+                <th>GST %</th>
+                <th>Amount</th>
+                <th>GST Amount</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody id="invoiceTable">
+            <tr>
+                <td colspan="7">No items added yet.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="summary">
+
+        <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+
+        <p>CGST: ₹<span id="cgst">0.00</span></p>
+
+        <p>SGST: ₹<span id="sgst">0.00</span></p>
+
+        <p class="grand-total">
+            Grand Total: ₹<span id="grandTotal">0.00</span>
+        </p>
+
+    </div>
+
+    <br>
+
+    <button class="save-btn no-print" onclick="saveInvoice()">
+        Save Invoice
+    </button>
+
+    <button class="print-btn no-print" onclick="window.print()">
+        Print Invoice
+    </button>
+
+    <div class="saved-invoices">
+
+        <h2>Saved Invoices</h2>
+
+        <div id="savedInvoices"></div>
+
+    </div>
+
+</div>
+</body>
+</html>
