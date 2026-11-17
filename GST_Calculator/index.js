@@ -28,7 +28,6 @@ let currentInvoice = null;
     };
 
 
-    // Remove item row
     const removeRow = (button) => {
 
         button.parentElement.remove();
@@ -36,7 +35,7 @@ let currentInvoice = null;
     };
 
 
-    // Get invoice items
+   
     const getItems = () => {
 
         const rows = document.querySelectorAll(".form-row");
@@ -58,12 +57,12 @@ let currentInvoice = null;
     };
 
 
-    // Calculate invoice
+    
     const calculateInvoice = () => {
 
         const items = getItems();
 
-        // Validate inputs
+   
         const validItems = items.filter(item =>
             item.name &&
             item.qty > 0 &&
@@ -83,7 +82,7 @@ let currentInvoice = null;
 
         }
 
-        // Calculate amount and GST using map()
+       
         const calculatedItems = validItems.map(item => {
 
             const { name, qty, rate, gst } = item;
@@ -107,17 +106,17 @@ let currentInvoice = null;
         });
 
 
-        // Calculate subtotal using reduce()
+        
         const subtotal = calculatedItems.reduce(
             (sum, item) => sum + item.amount, 0
         );
 
-        // Calculate total GST using reduce()
+        
         const totalGST = calculatedItems.reduce(
             (sum, item) => sum + item.gstAmount, 0
         );
 
-        // Split GST into CGST and SGST
+       
         const cgst = totalGST / 2;
 
         const sgst = totalGST / 2;
@@ -125,7 +124,7 @@ let currentInvoice = null;
         const grandTotal = subtotal + cgst + sgst;
 
 
-        // Store calculated invoice
+    
         currentInvoice = {
             id: Date.now(),
             date: new Date().toLocaleString(),
@@ -137,7 +136,7 @@ let currentInvoice = null;
         };
 
 
-        // Display invoice items
+       
         const table = document.getElementById("invoiceTable");
 
         table.innerHTML = calculatedItems.length === 0
@@ -173,7 +172,7 @@ let currentInvoice = null;
     };
 
 
-    // Escape user input before displaying HTML
+    
     const escapeHTML = (value) => {
 
         return String(value).replace(/[&<>"']/g, char => ({
@@ -187,7 +186,7 @@ let currentInvoice = null;
     };
 
 
-    // Save invoice in localStorage
+    
     const saveInvoice = () => {
 
         if (!currentInvoice) {
@@ -216,7 +215,7 @@ let currentInvoice = null;
     };
 
 
-    // Display saved invoices
+    
     const displaySavedInvoices = () => {
 
         const invoices = JSON.parse(
@@ -255,7 +254,7 @@ let currentInvoice = null;
     };
 
 
-    // Delete saved invoice
+    
     const deleteInvoice = (id) => {
 
         let invoices = JSON.parse(
@@ -274,5 +273,5 @@ let currentInvoice = null;
     };
 
 
-    // Load saved invoices when page opens
+    
     displaySavedInvoices();
